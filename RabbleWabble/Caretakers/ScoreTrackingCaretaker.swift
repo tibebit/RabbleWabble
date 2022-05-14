@@ -11,6 +11,7 @@ public final class ScoreTrackingCaretaker {
     public var scores = [QuestionGroup.Score]()
     
     public func retrieveScores(for fileName: String) {
+        if scores.isEmpty == false { scores.removeAll() }
         if let scores = try? DiskCaretaker.retrieve([QuestionGroup.Score].self, from: fileName) {
             self.scores = scores
         }
