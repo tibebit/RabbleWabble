@@ -7,8 +7,8 @@ This is a language learning application tailored especially for Japanese. I crea
 * Observer
 * Builder
 ## Roadmap
-- [x] ~~Implement user scores tracking
-- [x] ~~Implement question groups editing
+- [x] ~~Implement user scores tracking~~
+- [x] ~~Implement question groups editing~~
 - [ ] Implement a spaced repetition algorithm
 ## Requirements
 * iOS 13
