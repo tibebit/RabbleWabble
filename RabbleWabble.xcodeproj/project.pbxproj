@@ -30,6 +30,7 @@
 		CD4DE5342807E64800BBC7B4 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4DE5332807E64800BBC7B4 /* AppSettingsViewController.swift */; };
 		CD5E78992820476A0070E997 /* ScoreTrackingCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E78982820476A0070E997 /* ScoreTrackingCaretaker.swift */; };
 		CD5E789D282124590070E997 /* ScoreTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E789C282124590070E997 /* ScoreTrackingViewController.swift */; };
+		CDBB07142830207F001F9025 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBB07132830207F001F9025 /* Date+Ext.swift */; };
 		CDCE04B62822CC07007FF150 /* ScoreTrackingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE04B52822CC07007FF150 /* ScoreTrackingCell.swift */; };
 		CDD29A2228126CEA0002BAFC /* CreateQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD29A2128126CEA0002BAFC /* CreateQuestionGroupViewController.swift */; };
 		CDD29A2728126E100002BAFC /* NewQuestionGroup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD29A2328126E100002BAFC /* NewQuestionGroup.storyboard */; };
@@ -76,6 +77,7 @@
 		CD4DE5332807E64800BBC7B4 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		CD5E78982820476A0070E997 /* ScoreTrackingCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTrackingCaretaker.swift; sourceTree = "<group>"; };
 		CD5E789C282124590070E997 /* ScoreTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTrackingViewController.swift; sourceTree = "<group>"; };
+		CDBB07132830207F001F9025 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		CDCE04B52822CC07007FF150 /* ScoreTrackingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTrackingCell.swift; sourceTree = "<group>"; };
 		CDD29A2128126CEA0002BAFC /* CreateQuestionGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestionGroupViewController.swift; sourceTree = "<group>"; };
 		CDD29A2328126E100002BAFC /* NewQuestionGroup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewQuestionGroup.storyboard; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		CD4DE42F27FEB11200BBC7B4 /* RabbleWabble */ = {
 			isa = PBXGroup;
 			children = (
+				CDBB071228302066001F9025 /* Extensions */,
 				CD4DE46027FEB1DD00BBC7B4 /* AppDelegate */,
 				CDD29A2B2812711F0002BAFC /* Builders */,
 				CD0F1D28280BDC6C0008944A /* Caretakers */,
@@ -220,6 +223,14 @@
 				CD0F1D33280D616A0008944A /* BaseQuestionStrategy.swift */,
 			);
 			path = Strategies;
+			sourceTree = "<group>";
+		};
+		CDBB071228302066001F9025 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CDBB07132830207F001F9025 /* Date+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CDD29A2B2812711F0002BAFC /* Builders */ = {
@@ -342,6 +353,7 @@
 				CD4DE47127FEB4A600BBC7B4 /* QuestionView.swift in Sources */,
 				CDD29A2D281271310002BAFC /* QuestionGroupBuilder.swift in Sources */,
 				CDD29A2A28126E100002BAFC /* CreateQuestionCell.swift in Sources */,
+				CDBB07142830207F001F9025 /* Date+Ext.swift in Sources */,
 				CDCE04B62822CC07007FF150 /* ScoreTrackingCell.swift in Sources */,
 				CD4DE48028014C3600BBC7B4 /* QuestionGroupCell.swift in Sources */,
 				CD4DE49928068E0B00BBC7B4 /* SequentialQuestionStrategy.swift in Sources */,
