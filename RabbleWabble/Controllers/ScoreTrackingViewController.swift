@@ -10,6 +10,12 @@ import UIKit
 public final class ScoreTrackingViewController: UITableViewController {
     public static let storyboardID = String(describing: ScoreTrackingViewController.self)
     public var scores = [QuestionGroup.Score]()
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        title = "Previous Scores"
+        view.backgroundColor = .tertiarySystemGroupedBackground
+    }
 }
 
 //MARK: UITableViewDataSource
@@ -21,10 +27,7 @@ extension ScoreTrackingViewController {
     
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ScoreTrackingCell.identifier, for: indexPath) as? ScoreTrackingCell else { fatalError() }
-        
-        cell.correctCount.text = String(describing: scores[indexPath.row].correctCount)
-        cell.incorrectCount.text = String(describing: scores[indexPath.row].incorrectCount)
-        
+        cell.configure(with: scores[indexPath.row])
         return cell
     }
 }
