@@ -433,6 +433,7 @@
     "score": {
       "correctCount": 0,
       "incorrectCount": 0
+      "completionDate": 2022-05-14T18:01:03.406Z
     },
     "title": "Hiragana"
   },
@@ -870,6 +871,7 @@
     "score": {
       "correctCount": 0,
       "incorrectCount": 0
+      "completionDate": 2022-05-14T18:01:03.406Z
     },
     "title": "Katakana"
   },
@@ -914,6 +916,7 @@
     "score": {
       "correctCount": 0,
       "incorrectCount": 0
+      "completionDate": 2022-05-14T18:01:03.406Z
     },
     "title": "Basic Phrases"
   },
@@ -988,6 +991,7 @@
     "score": {
       "correctCount": 0,
       "incorrectCount": 0
+      "completionDate": 2022-05-14T18:01:03.406Z
     },
     "title": "Numbers"
   }

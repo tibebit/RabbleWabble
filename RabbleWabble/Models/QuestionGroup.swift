@@ -12,6 +12,7 @@ import Combine
 public class QuestionGroup: Codable {
     
     public class Score: Codable {
+        public var completionDate = Date()
         public var correctCount: Int = 0 {
             didSet {
                 updateCorrectAnswersPercentage()
@@ -27,6 +28,7 @@ public class QuestionGroup: Codable {
         private enum CodingKeys: String, CodingKey {
             case correctCount
             case incorrectCount
+            case completionDate
         }
         
         public required init(from decoder: Decoder) throws {
